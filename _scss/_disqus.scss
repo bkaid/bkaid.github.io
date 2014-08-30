@@ -1,0 +1,16 @@
+// remove disqus footer
+// thanks to http://developer-paradize.blogspot.com/2014/06/how-to-hide-or-remove-disqus-footer.html
+
+#disqus_thread{
+     position: relative;
+}
+
+#disqus_thread:after{
+     content: "";
+     display: block;
+     height: 55px;
+     width: 100%;
+     position: absolute;
+     bottom: 0px;
+     background:white;
+}
