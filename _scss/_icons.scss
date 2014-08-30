@@ -1,0 +1,12 @@
+footer {
+  svg {
+    path {
+      fill: $black;
+    }
+  }
+  svg:hover {
+    path {
+      fill: $blue;
+    }
+  }
+}
