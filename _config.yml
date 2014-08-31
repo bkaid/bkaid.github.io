@@ -9,7 +9,7 @@ name: Brandon Kaid
 description: Software Developer from Phoenix, AZ
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://avatars3.githubusercontent.com/u/315615?v=2&s=256
+avatar: images/avatar.jpg
 
 #
 # Flags below are optional
@@ -51,6 +51,7 @@ baseurl: ""
 markdown: kramdown
 highlighter: pygments
 permalink: /:title/
+safe: true
 
 # Set the Sass partials directory, as we're using @imports
 sass:
