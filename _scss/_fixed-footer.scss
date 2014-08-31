@@ -1,0 +1,22 @@
+$footerHeight: 85px;
+
+html, body {
+  height: 100%;
+}
+
+.site-wrap {
+  min-height: 100%;
+  margin-bottom: -$footerHeight;
+
+  &:after {
+    height: $footerHeight;
+    content: "";
+    display: block;
+  }
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  height: $footerHeight;
+}
