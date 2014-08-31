@@ -1,16 +1,27 @@
 // remove disqus footer
 // thanks to http://developer-paradize.blogspot.com/2014/06/how-to-hide-or-remove-disqus-footer.html
 
+$disqusOverlay: 55px;
+$disqusOverlayMobile: 185px;
+
 #disqus_thread{
-     position: relative;
+  position: relative;
+  min-height: $disqusOverlay;
+  @include mobile {
+    height: $disqusOverlayMobile;
+  }
 }
 
 #disqus_thread:after{
-     content: "";
-     display: block;
-     height: 55px;
-     width: 100%;
-     position: absolute;
-     bottom: 0px;
-     background:white;
+  content: "";
+  display: block;
+  height: $disqusOverlay;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  background: white;
+
+  @include mobile {
+    height: $disqusOverlayMobile;
+  }
 }
